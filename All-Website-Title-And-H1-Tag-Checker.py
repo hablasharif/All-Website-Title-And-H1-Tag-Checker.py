@@ -63,3 +63,11 @@ if st.button("Scrape Titles"):
     for url in urls:
         title = get_title_from_url(url.strip())
         st.write(f'Title of {url}: {title}')
+
+
+# Create a link to the external URL
+url = "https://danga-sitemap-finderpy.streamlit.app/"
+link_text = "If you Want To find Sintemap for multiple urls then visit this"
+
+# Display the link
+st.markdown(f"[{link_text}]({url})")
